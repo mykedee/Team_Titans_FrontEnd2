@@ -1,4 +1,5 @@
 /* ROOM DESCRIPTION */
+
 #room-text .text{
   height: 35vh;
   align-items: baseline;
@@ -7,8 +8,9 @@
 
 #room-text .title{
   font-size: 25px;
-
+  margin-top: 100px;
 }
+
 #room-text .content{
   font-size: 16px;
   text-align: left;
@@ -23,25 +25,94 @@
 align-items: center;
 height: 100%;
 }
+
 #room-description .images{
   margin-top: 6.67rem;
 }
 
-/* FOOTER */
-#footer{
-  flex-direction: column;
-  align-items: center;
+
+  footer nav .navbar-brand {
+    margin-bottom: 2rem;
+  }
+
+  footer div div:last-child, footer nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .social-media a:first-child {
+    padding-left: 0;
+  }
+
+
+
+#footer2{
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
-#footer div{
-  display: none;
+
+.icon-footer {
+  display: -ms-grid;
+  display: grid;
+  padding-top: 10px;
+  font-family: Playfair Display;
+  color: rgba(255, 255, 255, 0.903504);
+  font-size: 12px;
+  line-height: 16px;
 }
 
-#footer ul{
-  padding-top: 1px;
+#footer ul {
+    padding-top: 1px;
+    text-align: center;
 }
 
-#footer2 p{
-  font-size: 15px;
-  margin-top: 30px;
+  #footer ul{
+    padding-top: 50px;
+    text-align: center;
+  }
+
+
+  #footer2 p{
+    font-size: 15px;
+    margin-top: 30px;
+    text-align: center;
+    color: #F0F0F0;
+    font-family: 'Playfair Display', serif;
+  }
+
+
+#footer ul a{
+  justify-content: space-between;
+  font-family: 'Playfair Display', serif;
+  color: rgba(255, 255, 255, 0.903504);
+  font-size: 12px;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+}
+
+.footer-icons ul {
+    text-align: center;
+}
+
+#footer li {
+    display: inline;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+}
+
+#footer2 ul a {
+    justify-content: space-between;
+    font-family: 'Playfair Display', serif;
+    color: rgba(255, 255, 255, 0.903504);
+    font-size: 16px;
+    padding: 0.75rem;
+    margin: 18px 4px;
+}
+.footer-icons li {
+    list-style: none;
+    display: inline;
+
 }

@@ -25,7 +25,9 @@ nav {
 }
 
 /* ROOMS DESCRIPTION */
-
+#footer div{
+    display: none;
+  }
 #room-text .text{
   display: flex;
   flex-direction: column;
@@ -82,7 +84,7 @@ nav {
 }
 
 #room-description ul{
-  margin-top: 15px;   
+  margin-top: 15px;
 }
 
 #room-description ul li{
@@ -90,7 +92,7 @@ nav {
   line-height: 30px;
   font-family: 'Source Sans Pro', sans-serif;
   margin-left: 16px;
- 
+
 }
 
 #room-description .btn{
@@ -100,7 +102,7 @@ nav {
   color: #ffffff;
   font-family: 'Playfair Display', serif;
   padding: 16px 23px 16px 19.35px;
-  min-width: 200px;    
+  min-width: 200px;
 }
 
 #room-description a .arrow{
@@ -110,23 +112,35 @@ nav {
   float: right;
 }
 
-/* FOOTER */
+#footer ul {
+    padding-top: 1px;
+    text-align: center;
+}
 
+/* ===================================================================================
+                              Responsiveness  768px and above
+=================================================================================== */
+
+/* Section - Footer */
+
+@media (min-width: 768px) {
 #footer{
   display: flex;
   justify-content: space-between;
   width: 80%;
   margin: 0 auto;
-  margin-top: 124px;
+  margin-top: 1rem;
   border-bottom: 1px solid #D8D8D8;
 }
+#footer div{
+    display: flow-root;
+  }
 
 #footer ul{
   display: flex;
   align-items: center;
   font-family: 'Playfair Display', serif;
   list-style: none;
-  /* margin-top: 29px; */
 }
 
 #footer ul a{
@@ -142,16 +156,16 @@ nav {
   padding-right: 0;
 }
 
-#footer div, ul{
-  margin-top: 29px;
-  margin-bottom: 12px;
-}
-
 #footer2{
   display: flex;
   justify-content: space-between;
   width: 80%;
   margin: 0 auto;
+}
+
+#footer div, ul{
+  margin-top: 29px;
+  margin-bottom: 12px;
 }
 
 #footer2 p{
@@ -163,11 +177,14 @@ nav {
   height: 100%;
 }
 
+#footer{
+    align-items: center;
+  }
+
 #footer2 ul{
   display: flex;
   align-items: center;
   list-style: none;
-  /* margin-top: 29px; */
 }
 
 #footer2 ul a{
@@ -178,18 +195,4 @@ nav {
   padding: 0.75rem;
   margin: 18px 4px;
 }
-
-#footer2 ul li a:last-of-type{
-  padding-right: 0;
 }
-
-
-
-
-
-
-
-
- 
-
-

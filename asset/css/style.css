@@ -13,13 +13,14 @@
 }
 
 body {
-  font-family: 'Source Sans Pro'; 
+  font-family: 'Source Sans Pro';
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   color: #fff;
   background: var(--dark-color);
 }
+
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Playfair Display';
@@ -142,81 +143,11 @@ a {
   width: 80%;
 }
 
-/* Section - Footer */
 
-#footer{
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 1rem;
-  border-bottom: 1px solid #D8D8D8;
-}
 
-#footer ul{
-  display: flex;
-  align-items: center;
-  font-family: 'Playfair Display', serif;
-  list-style: none;
-  /* margin-top: 29px; */
-}
-
-#footer ul a{
-  justify-content: space-between;
-  font-family: 'Playfair Display', serif;
-  color: rgba(255, 255, 255, 0.903504);
-  font-size: 12px;
-  padding: 0.75rem;
-  margin: 0 0.25rem;
-}
-
-#footer ul li a:last-of-type{
-  padding-right: 0;
-}
-
-#footer div, ul{
-  margin-top: 29px;
-  margin-bottom: 12px;
-}
-
-#footer2{
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-  margin: 0 auto;
-}
-
-#footer2 p{
-  margin-top: 26px;
-  font-family: 'Playfair Display', serif;
-  font-size: 26px;
-  color: #F0F0F0;
-  text-align: center;
-  height: 100%;
-}
-
-#footer2 ul{
-  display: flex;
-  align-items: center;
-  list-style: none;
-  /* margin-top: 29px; */
-}
-
-#footer2 ul a{
-  justify-content: space-between;
-  font-family: 'Playfair Display', serif;
-  color: rgba(255, 255, 255, 0.903504);
-  font-size: 16px;
-  padding: 0.75rem;
-  margin: 18px 4px;
-}
-
-#footer2 ul li a:last-of-type{
-  padding-right: 0;
-}
 
 /* ===================================================================================
-                              Facilities Page 
+                              Facilities Page
 =================================================================================== */
 
 /* Facilities page */
@@ -286,11 +217,7 @@ a {
   right: -90px;
 }
 
-/* ===================================================================================
-                              Responsiveness 
-=================================================================================== */
 
-@media(max-width: 768px) {
   #hero .hero-content {
     width: 100%;
     text-align: center;
@@ -324,21 +251,153 @@ a {
     padding-left: 0;
   }
 
-  #footer{
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  #footer div{
-    display: none;
-  }
-  
+
+
+#footer2{
+  width: 100%;
+}
+
+.social-media {
+    margin-bottom: 20px;
+}
+
+.icon-footer {
+  display: -ms-grid;
+  display: grid;
+  padding-top: 10px;
+  font-family: Playfair Display;
+  color: rgba(255, 255, 255, 0.903504);
+  font-size: 12px;
+  line-height: 16px;
+}
+
+
   #footer ul{
     padding-top: 1px;
+    text-align: center;
   }
-  
+
   #footer2 p{
     font-size: 15px;
     margin-top: 30px;
+    text-align: center;
   }
+
+#footer ul a{
+  justify-content: space-between;
+  font-family: 'Playfair Display', serif;
+  color: rgba(255, 255, 255, 0.903504);
+  font-size: 12px;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+}
+
+.footer-icons ul {
+    text-align: center;
+}
+
+#footer li {
+    display: inline;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+}
+
+#footer2 ul a {
+    justify-content: space-between;
+    font-family: 'Playfair Display', serif;
+    color: rgba(255, 255, 255, 0.903504);
+    font-size: 16px;
+    padding: 0.75rem;
+    margin: 18px 4px;
+}
+.footer-icons li {
+    list-style: none;
+    display: inline;
+
+}
+#footer div{
+    display: none;
+  }
+
+/* ===================================================================================
+                              Responsiveness  768px and above
+=================================================================================== */
+
+/* Section - Footer */
+@media (min-width: 768px) {
+#footer{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  border-bottom: 1px solid #D8D8D8;
+}
+
+#footer ul{
+  display: flex;
+  align-items: center;
+  font-family: 'Playfair Display', serif;
+  list-style: none;
+}
+
+#footer ul a{
+  justify-content: space-between;
+  font-family: 'Playfair Display', serif;
+  color: rgba(255, 255, 255, 0.903504);
+  font-size: 12px;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+}
+
+#footer ul li a:last-of-type{
+  padding-right: 0;
+}
+
+#footer2{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+#footer div{
+    display: flow-root;
+  }
+
+#footer div, ul{
+  margin-top: 29px;
+  margin-bottom: 12px;
+}
+
+#footer2 p{
+  margin-top: 26px;
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  color: #F0F0F0;
+  text-align: center;
+  height: 100%;
+}
+
+#footer{
+    align-items: center;
+  }
+
+#footer2 ul{
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#footer2 ul a{
+  justify-content: space-between;
+  font-family: 'Playfair Display', serif;
+  color: rgba(255, 255, 255, 0.903504);
+  font-size: 16px;
+  padding: 0.75rem;
+  margin: 18px 4px;
+}
 }
